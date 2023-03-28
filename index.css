@@ -245,7 +245,7 @@ a{
 
 
 }
-.phone button{
+ button.phone {
    display: none;
 }
 .start{
