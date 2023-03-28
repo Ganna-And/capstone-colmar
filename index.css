@@ -30,12 +30,46 @@ header {
     font-size: 1.25em;
     font-weight: 700;
  }
+ .nav-phone {
+   display: none;
+ }
 
  div#logo h2{
     background: linear-gradient(to right, #FFA500 50%, #1A1A2E 50%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+ }
+
+ @media only screen and (max-width: 768px) {
+   .nav-head, .desktop {
+      display: none;
+   }
+   .nav-phone{
+      display: flex;
+
+   }
+   .nav-head {
+      margin-left: 0px;
+   }
+   header{
+      justify-content:;
+   }
+   ul{
+      padding-left: 0px;
+      flex: 4;
+      justify-content: space-between;
+   }
+   nav{
+      width: 75%;
+      justify-content: space-between;
+   }
+
+   div#logo{
+      width: auto;
+   }
+   
+
  }
 
 /* section main */
@@ -84,7 +118,32 @@ border: #1A1A2E 5px solid;
       font-size: 2rem;
       font-weight: 700;
    }
+   @media only screen and (max-width: 768px){
+      .main{
+         display: block;
+      }
+      .main img{
+         margin: 0px; 
+      }
 
+      div.banner{
+         width: auto;
+         box-sizing: border-box;
+         margin-top: 85px;
+         padding: 0px;
+      }
+      div.banner-description{
+         margin: 32px 16px;
+      }
+      .banner-description h1{
+         margin: 0px;
+         
+      }
+      .banner-description h2{
+         margin-top: 32px;
+         margin-bottom: 24px;
+      }
+   }
    /* section second-container */
 
    .second-container{
@@ -93,9 +152,9 @@ border: #1A1A2E 5px solid;
     margin-bottom: 32px;
 
    }
-.banner{
+  .second-container .banner{
    padding-right: 24px;
-   padding-left: 24px;
+   
 }
    .mobile{
       display: none;
@@ -122,6 +181,72 @@ border: #1A1A2E 5px solid;
   }
 .detailed-description{
    width: 65%;
+}
+a{
+   text-decoration: none;
+}
+@media only screen and (max-width: 768px){
+   .second-container .banner{
+      display: none;
+      margin: 0px 16px;
+   }
+   div.detailed-container{
+      display:block;
+      border: #E0FFFF;
+   }
+   .detailed {
+      width: 100%;
+      margin:0px;
+   }
+   .detailed-sub .mobile{
+      display: block;
+   }
+   .detailed-sub, .detailed-description{
+      width: auto;
+   }
+   .detailed-description{
+      margin: 0px 32px 48px 32px;
+   }
+   
+
+
+
+}
+
+/* Start */
+
+@media only screen and (max-width: 768px){
+   div.start-container{
+      display: block;
+   }
+   .start-box {
+      display: none;
+   }
+   
+   button.phone {
+      display: block;
+      border: #1A1A2E solid 5px;
+      width: 100%;
+      background-color: #FFA500;
+      padding: 16px 0px 24px 16px;
+      margin-bottom: 8px;
+      text-align: start;
+      font-size: 1.2em;
+      font-weight: 700;
+   }
+   section.start h1{
+      padding:0px;
+      margin-top: 16px;
+      font-size: 2em;
+   }
+   section.start{
+      padding-bottom: 32px;
+   }
+
+
+}
+.phone button{
+   display: none;
 }
 .start{
    background-color: aliceblue;
@@ -162,7 +287,26 @@ border: #1A1A2E 5px solid;
   .start-box img{
    width: 100%;
   }
+/* thesis */
+@media only screen and (max-width: 768px){
+   
+   div.video-phone{
+      display: block;
+      margin: 16px 0px;
+   }
 
+   div.video-phone video{
+      width: 100%;
+      margin-bottom: 24px;
+   }
+
+   div.thesis-container{
+      display: none;
+   }
+}
+  .video-phone{
+   display: none;
+  }
   .thesis h1{
    margin: 32px auto;
    text-align: center;
@@ -202,6 +346,16 @@ border: #1A1A2E 5px solid;
    width:35%;
    margin: 16px;
    height: auto;
+  }
+  /*Footer*/
+  @media only screen and (max-width: 768px){
+   nav.foot-nav{
+      display:none;
+   }
+   p.year{
+      margin:16px;
+   }
+
   }
   footer{
    display: flex;
